@@ -18,28 +18,28 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-top: 20px;
+			margin-top: 50px;
 		}
 
 		.box {
-			width: 500px;
+			width: 450px;
 			background-color: #333333;
 			padding: 20px;
-			border-radius: 14px;
+			border-radius: 10px;
 			margin: 10px;
-			box-shadow: 5px 5px 20px rgba(255, 100, 255, 0.3);
+			box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 		}
 
 		label {
 			display: block;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 			font-size: 21px;
 		}
 
 		input[type="text"] {
 			font-size: 21px;
 			padding: 5px;
-			border-radius: 7px;
+			border-radius: 5px;
 			border: none;
 			background-color: #555555;
 			color: white;
@@ -50,7 +50,7 @@
 		input[type="button"] {
 			font-size: 20px;
 			padding: 10px;
-			border-radius: 7px;
+			border-radius: 5px;
 			border: none;
 			background-color: #444444;
 			color: white;
@@ -74,18 +74,18 @@
 	<div class="container">
 		<div class="box">
 			<label for="binaryIP">Endereço IP em Binário:</label>
-			<input type="text" id="binaryIP" placeholder="Digite o endereço em binário" autofocus>
+			<input type="text" id="binaryIP" placeholder="Digite o endereço IP em binário" autofocus>
 			<input type="button" value="Calcular Endereço IP Decimal" onclick="calculateDecimal()">
-			<label for="decimalIP"></label>
-			<input type="text" id="decimalIP" placeholder="Resultado IP" readonly>
+			<label for="decimalIP">Endereço IP Decimal:</label>
+			<input type="text" id="decimalIP" placeholder="O endereço IP decimal será exibido aqui" readonly>
 		</div>
 
 		<div class="box">
 			<label for="decimalIP2">Endereço IP Decimal:</label>
-			<input type="text" id="decimalIP2" placeholder="Digite o endereço em decimal" autofocus>
+			<input type="text" id="decimalIP2" placeholder="Digite o endereço IP decimal" autofocus>
 			<input type="button" value="Calcular Endereço IP Binário" onclick="calculateBinary()">
-			<label for="binaryIP2"></label>
-			<input type="text" id="binaryIP2" placeholder="Resultado Binário" readonly>
+			<label for="binaryIP2">Endereço IP em Binário:</label>
+			<input type="text" id="binaryIP2" placeholder="O endereço IP binário será exibido aqui" readonly>
 		</div>
 	</div>
 
